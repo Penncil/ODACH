@@ -1,0 +1,8 @@
+ODAL   One-shot distributed algorithm for logistic regression example of lung cancer data
+ODAC   One-shot distributed algorithm for Cox regression example of lung cancer data 
+ODACH   ODAC with Heterogeneous baseline hazards example of lung cancer data 
+ODAH   One-shot distributed algorithm for hurdle regression example of CrabSatellites data 
+DLM    Distributed algorithm for Linear Model, with possible fixed / random site-specific effects
+DPQL   Distributed Penalized Quasi-Likelihood algorithm for Generalized Linear Mixed Model
+ADAP   A Distributed Algorithm for Penalized regression
+ODACAT  One-shot Distributed Algorithm for multi-CATegorical regression (nominal or ordinal)
