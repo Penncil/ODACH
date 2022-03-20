@@ -104,7 +104,7 @@ pda(site_id = 'site2', ipdata = lung_split[[2]], dir=mydir)
 ## site1 communicate its individual estimate: after review, enter "1" to allow tranferring to lead site   
 pda(site_id = 'site2', ipdata = lung_split[[1]], dir=mydir)
 # you now can see site1_initialize.json in the working dir
-# all the AD are ready, control.json is also automatically updated to the next step
+# all the individual estimates are ready, control.json is also automatically updated to the next step
 
 ``` 
 
@@ -113,12 +113,16 @@ STEP 2: calculate derivatives (AD)
 ```r 
 ## site3 communicate its derivatives as AD: after review, enter "1" to allow tranferring AD   
 pda(site_id = 'site3', ipdata = lung_split[[3]], dir=mydir)
+# you now can see site3_derivatives.json in the working dir
 
 ## site2 communicate its derivatives as AD: after review, enter "1" to allow tranferring AD
 pda(site_id = 'site2', ipdata = lung_split[[2]], dir=mydir)
+# you now can see site2_derivatives.json in the working dir
 
 ## site1 communicate its derivatives as AD: after review, enter "1" to allow tranferring AD
 pda(site_id = 'site1', ipdata = lung_split[[1]], dir=mydir)
+# you now can see site1_derivatives.json in the working dir
+# all the individual AD are ready, control.json is also automatically updated to the next step
 ```
 
 
@@ -127,8 +131,9 @@ STEP 3: estimation using AD
 ```r  
 ## lead site obtain surrogate estimates using ADs
 pda(site_id = 'site1', ipdata = lung_split[[1]], dir=mydir)
+# You now can see site1_estimate.json in the working dir
 
-## the PDA ODACH is now completed! You now can see site1_estimate.json in the working dir
+## the PDA ODACH is now completed! 
 ## All the sites can still run their own surrogate estimates and broadcast them.
 
 
